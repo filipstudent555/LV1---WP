@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO + pristupačnost: kratak opis stranice za tražilice i pomoćne tehnologije -->
+    <meta name="description" content="Početna stranica s vremenskim podacima, tablicom, navigacijom i izdvojenim vremenskim prikazom.">
+    <title>Vremenski podaci</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="branding">
+                <p class="eyebrow">LV1</p>
+                <h1>Vremenski podaci</h1>
+            </div>
+            <div class="nav-holder">
+                <a href="#main-nav" class="menu-button" aria-label="Prikaži ili sakrij navigaciju">Izbornik</a>
+                <nav id="main-nav" aria-label="Glavna navigacija">
+                    <ul class="nav-list">
+                        <li><a href="index.html" aria-current="page">Početna</a></li>
+                        <li><a href="grafikon.html">Grafikon</a></li>
+                        <li><a href="slike.html">Galerija</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="page-main">
+        <section class="intro" aria-labelledby="uvod-naslov">
+            <article>
+                <h2 id="uvod-naslov">Dobrodošli!</h2>
+                <p>Pozdrav moje ime je <b>VREMENKO SVEVREMENI</b>, vaš najpouzdaniji vodič za vremensku prognozu!</p>
+            </article>
+        </section>
+        <section class="content-grid" aria-labelledby="podaci-naslov">
+            <article class="table-card">
+                <h2 id="podaci-naslov">Tablica vremenskih podataka</h2>
+                <div class="table-wrap" role="region" aria-label="Tablica vremenskih podataka">
+                    <table>
+                        <caption>Vremenski podaci</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Temp</th>
+                                <th scope="col">Vlaga</th>
+                                <th scope="col">Vjetar</th>
+                                <th scope="col">Oborine</th>
+                                <th scope="col">Tlak</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>23</td><td>69</td><td>9.5</td><td>10</td><td>1012.91</td></tr>
+                            <tr><td>29</td><td>82</td><td>18</td><td>78</td><td>991.54</td></tr>
+                            <tr><td>36</td><td>48</td><td>3.5</td><td>11</td><td>1024.92</td></tr>
+                            <tr><td>32</td><td>35</td><td>5.5</td><td>9</td><td>1010.24</td></tr>
+                            <tr><td>23</td><td>23</td><td>3.5</td><td>8</td><td>1027.69</td></tr>
+                            <tr><td>30</td><td>57</td><td>12.5</td><td>33</td><td>1002.2</td></tr>
+                            <tr><td>28</td><td>65</td><td>1.5</td><td>20</td><td>1007</td></tr>
+                            <tr><td>29</td><td>96</td><td>11.5</td><td>79</td><td>1013.23</td></tr>
+                            <tr><td>35</td><td>63</td><td>8</td><td>3</td><td>1029.83</td></tr>
+                            <tr><td>18</td><td>82</td><td>8.5</td><td>83</td><td>999.13</td></tr>
+                            <tr><td>8</td><td>90</td><td>1.5</td><td>70</td><td>1011.19</td></tr>
+                            <tr><td>19</td><td>65</td><td>2.5</td><td>20</td><td>1016.81</td></tr>
+                            <tr><td>28</td><td>72</td><td>14</td><td>73</td><td>1005.12</td></tr>
+                            <tr><td>40</td><td>94</td><td>15</td><td>97</td><td>1021.59</td></tr>
+                            <tr><td>15</td><td>61</td><td>11</td><td>63</td><td>1006.12</td></tr>
+                            <tr><td>26</td><td>90</td><td>26</td><td>88</td><td>998.97</td></tr>
+                            <tr><td>26</td><td>67</td><td>11</td><td>74</td><td>993.37</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            <aside class="info-aside" aria-labelledby="aside-naslov">
+                <h2 id="aside-naslov">Vrijeme danas</h2>
+                <picture>
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="https://images.unsplash.com/photo-1500674425229-f692875b0ab7?auto=format&fit=crop&w=800&q=80">
+                    <img
+                        src="https://images.unsplash.com/photo-1541119638723-c51cbe2262aa?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Krajolik s oblacima i promjenjivim vremenskim uvjetima"
+                        loading="lazy">
+                </picture>
+                <article class="mini-card" aria-labelledby="zakljucak-naslov">
+                    <h3 id="zakljucak-naslov">Napomena</h3>
+                    <p>Za donošenje zaključaka nužno je pogledati stranicu sa grafikonima.</p>
+                </article>
+            </aside>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2025. Web programiranje - LV1 zadatak</p>
+    </footer>
+</body>
+</html>
